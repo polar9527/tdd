@@ -53,7 +53,7 @@ class NewVisitorTest(LiveServerTestCase):
         time.sleep(1)
         
         self.check_for_row_in_list_table('1: Buy peacock feathers')
-        #self.check_for_row_in_list_table('2: Use peacock feathers to make a fly')
+        self.check_for_row_in_list_table('2: Use peacock feathers to make a fly')
 
         self.browser.quit()
         self.browser = webdriver.Firefox()
@@ -77,7 +77,7 @@ class NewVisitorTest(LiveServerTestCase):
         self.assertIn('Buy milk', page_text)
         
 
-        self.fail('Finish the test!')
+        #self.fail('Finish the test!')
         
 
 
