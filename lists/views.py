@@ -44,4 +44,3 @@ def new_list(request):
         return redirect(list_)
     else:
         return render(request, 'home.html', {"form": form})
-
